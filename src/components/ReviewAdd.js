@@ -109,7 +109,7 @@ const ReviewAdd = () => {
 
         <div className="review-container">
           <div className="review-header">
-            <p>이번 여행은 어떠셨나요?</p>
+            <p>🚌 이번 여행은 어떠셨나요?</p>
           </div>
           <div className="reviewform-container">
             <div className="form-title">

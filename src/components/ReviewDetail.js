@@ -124,15 +124,15 @@ const ReviewDetail = () => {
                 <div className="review-detail-form">
                     <div className="review-detail-form-header">
                         <h2 className="review-detail-title">{reviewData.title}</h2>
-                        <p><strong>작성날짜:</strong> {reviewData.createdAt}</p>
-                        <p><strong>작성자:</strong> {reviewData.username}</p>
+                        <p><strong>🗓️ 날짜:</strong> {reviewData.createdAt}</p>
+                        <p><strong>👤 작성자:</strong> {reviewData.username}</p>
                         <div className="review-detail-title-header">
                             <h3>📄 리뷰 내용</h3>
                         </div>
                     </div>
 
                     <div className="review-detail-text">
-                        <p><strong>평점:</strong> {reviewData.rating}점</p>
+                        <p><strong>⭐ 평점:</strong> {reviewData.rating}점</p>
                         <p><strong>내용:</strong> {reviewData.content}</p>
                     </div>
                 </div>

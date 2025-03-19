@@ -169,8 +169,8 @@ const ScheduleDetail = () => {
 
             {/* 일정 제목, 날짜, 작성자 정보 */}
             <h2 className="schedule-detail-title">{scheduleData.title}</h2>
-            <p><strong>날짜:</strong> {scheduleData.date}</p>
-            <p><strong>작성자:</strong> {scheduleData.username}</p>
+            <p><strong>🗓️ 날짜:</strong> {scheduleData.date}</p>
+            <p><strong>👤 작성자:</strong> {scheduleData.username}</p>
 
             {/* 일정 목록 출력 */}
             {scheduleData.scheduleItems.length > 0 && (

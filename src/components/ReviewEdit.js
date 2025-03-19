@@ -121,7 +121,7 @@ const ReviewEdit = () => {
             <IoCaretBackCircle size={32} />
           </div>
           <div className="review-header">
-            <p>리뷰 수정</p>
+            <p>✏️ 리뷰 수정</p>
           </div>
           <div className="reviewform-container">
             <div className="form-title">

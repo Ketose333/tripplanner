@@ -12,13 +12,14 @@
     justify-content: space-between;
 }
 
-/*검색창 안내문 글자 스타일*/
+/* 검색창 안내문 글자 스타일 */
 .search-review-title {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #555;
     padding-right: 10px;
+    margin-top: -20px;
 }
 
 /* 제목 스타일 */
@@ -88,10 +89,8 @@
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 450px;
-    /* 너비 조정 */
+    width: 400px;
     height: auto;
-    /* 높이 자동 조정 */
     transition: transform 0.3s ease-in-out;
 }
 

@@ -167,7 +167,7 @@ const Schedule = () => {
       <Search onSearch={handleSearch} />
       <p className="search-schedule-title">🔍관광지 및 행사명을 검색하세요</p>
       <div className="schedule-list-container">
-        <h2>📅 일정 목록</h2>
+        <h2>🗓️ 일정 목록</h2>
         <div className="schedule-view-select">
           <label htmlFor="view-selection">일정 유형: </label>
           <select id="view-selection" value={view} onChange={(e) => setView(e.target.value)}>
@@ -188,7 +188,7 @@ const Schedule = () => {
                     <Link to={`/schedule/${schedule.id}`} className="schedule-card-btn">
                       <div className="schedule-card-content">
                         <div className="schedule-card-header">
-                          <p><strong>작성자:</strong> {schedule.username}</p>
+                          <p><strong>👤 작성자:</strong> {schedule.username}</p>
                           <p className="schedule-date">{schedule.date}</p>
                         </div>
                         <p className="schedule-title">{schedule.title}</p>

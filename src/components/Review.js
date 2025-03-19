@@ -183,51 +183,46 @@ const Review = () => {
             </div>
           </div>
         </div>
-        <div className="review-list-form">
-          <div className="review-list-form-container">
-            {review.length === 0 ? (
-              <div className="no-review">
-                <p>등록된 리뷰가 없습니다.</p>
-              </div>
-            ) : (
-              <>
-                <div className="review-cards-container">
-                  {getCurrentPageReview().map((review) => (
-                    <div className="review-card" key={review.review_id}>
-                      <button
-                        onClick={() => handleClick(review.review_id)}
-                        className="review-card-btn"
-                      >
-                        <div className="review-card-content">
-                          <div className="review-card-header">
-                            <p className="review-card-text"> 작성자: {review.username}</p>
-                            <p className="review-card-text">{review.createdAt}</p>
-                          </div>
-                          <div className="review-card-subheader">
-                            <p className="review-card-text">{review.title}</p>
-                            <p className="review-card-text">평점: {review.rating}점</p>
-                          </div>
-                          <p className="review-card-context">{review.content}</p>
-                        </div>
-                      </button>
-                    </div>
-                  ))}
-                </div>
-
-                {review.length > 0 && (
-                  <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    pageNumbers={pageNumbers}
-                    currentGroup={currentGroup}
-                    handlePageChange={handlePageChange}
-                    onGroupChange={handleGroupChange}
-                  />
-                )}
-              </>
-            )}
+        {review.length === 0 ? (
+          <div className="no-review">
+            <p>등록된 리뷰가 없습니다.</p>
           </div>
-        </div>
+        ) : (
+          <div className="review-list-form">
+            <div className="review-list-form-container">
+              <div className="review-cards-container">
+                {getCurrentPageReview().map((review) => (
+                  <div className="review-card" key={review.review_id}>
+                    <button
+                      onClick={() => handleClick(review.review_id)}
+                      className="review-card-btn"
+                    >
+                      <div className="review-card-content">
+                        <div className="review-card-header">
+                          <p className="review-card-text">👤 작성자: {review.username}</p>
+                          <p className="review-card-text">{review.createdAt}</p>
+                        </div>
+                        <div className="review-card-subheader">
+                          <p className="review-card-text">{review.title}</p>
+                          <p className="review-card-text">⭐ 평점: {review.rating}점</p>
+                        </div>
+                        <p className="review-card-context">{review.content}</p>
+                      </div>
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                pageNumbers={pageNumbers}
+                currentGroup={currentGroup}
+                handlePageChange={handlePageChange}
+                onGroupChange={handleGroupChange}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

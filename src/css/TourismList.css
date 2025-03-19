@@ -9,6 +9,7 @@
     margin: 30px;
     min-height: 60vh;
 }
+
 /* 관광지 카드 목록 정렬 */
 .tourism-cards {
     display: flex;
@@ -16,6 +17,7 @@
     justify-content: flex-start;
     gap: 20px;
 }
+
 /* 관광지 카드 스타일 컨포넌트 */
 .tourism-card {
     display: flex;
@@ -33,6 +35,7 @@
     padding: 20px;
     background: #FFFFFF;
 }
+
 /* 카드 내용 안 이미지 스타일 */
 .tourism-firstimage {
     width: 70%;
@@ -52,6 +55,7 @@
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
 /* 정보 버튼 스타일 효과 */
 .info-button:hover {
     background-color: #C0E7E9;
@@ -59,12 +63,12 @@
 
 /* 검색창 스타일  */
 .event-status {
-    color: #4DC1DF;
+    color: #45A7C5;
     font-weight: bold;
     padding: 6px 12px;
     background-color: #FDFCEC;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #4DC1DF;
+    border-left: 4px solid #45A7C5;
     border-radius: 4px;
     display: block;
     text-align: left;

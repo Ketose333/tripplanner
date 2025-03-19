@@ -26,7 +26,7 @@ const EventList = ({ data, loading }) => {
 
   return (
     <div className="tourism-container">
-      <h1>🚌 여행 행사 리스트</h1>
+      <h1>🎇 여행 행사 리스트</h1>
       <div className="tourism-cards">
         {loading ? (
           <div></div> // 로딩 중일 때 아무것도 표시하지 않음
